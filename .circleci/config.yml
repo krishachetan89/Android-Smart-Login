@@ -17,8 +17,8 @@ jobs:
       - restore_cache:
           <<: *cache_key
        - run:
-      name: chmod permissions
-      command: chmod +x ./gradlew
+        name: chmod permissions
+        command: sudo chmod +x ./gradlew
       - run:
           name: Download Dependencies
           command: ./gradlew dependencies
